@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         val data = DataModel("Stevdza-San",
         "Android Developer",
-        "https://i.postimg.cc/nr0fMmS3/Logo.png"
+        "https://i.postimg.cc/nr0fMmS3/Logo.png",
+            12
         )
 
         binding.dataModel = data
