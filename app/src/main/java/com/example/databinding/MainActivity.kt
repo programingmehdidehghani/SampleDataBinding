@@ -10,12 +10,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+      //  setContentView(R.layout.activity_main)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val data = DataModel("Stevdza-San",
         "Android Developer",
-        "https://i.postimg.cc/nr0fMmS3/Logo.png")
+        "https://i.postimg.cc/nr0fMmS3/Logo.png"
+        )
 
         binding.dataModel = data
     }

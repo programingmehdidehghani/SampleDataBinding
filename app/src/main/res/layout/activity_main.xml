@@ -7,7 +7,6 @@
       <variable
           name="dataModel"
           type="com.example.databinding.DataModel" />
-
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
