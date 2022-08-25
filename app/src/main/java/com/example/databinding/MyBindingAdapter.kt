@@ -7,8 +7,8 @@ import androidx.databinding.BindingAdapter
 import coil.load
 import kotlinx.android.synthetic.main.activity_main.view.*
 
-@BindingAdapter("loadImageFromUrl","displayTitle", requireAll = false)
-fun ImageView.loadImageFromUrl(profilePhoto : String,title : String){
+@BindingAdapter("loadImageFromUrl")
+fun ImageView.loadImageFromUrl(profilePhoto : String){
     this.load(profilePhoto)
 }
 
@@ -16,6 +16,8 @@ fun ImageView.loadImageFromUrl(profilePhoto : String,title : String){
 fun View.setViewVisibility(points : Int){
     if (points > 10){
        this.visibility = View.VISIBLE
+    }  else{
+       this.visibility = View.GONE
     }
     when(this){
         is  ImageView ->{
